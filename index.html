@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first html portfolio</title>
+    <title>my first html portfolio</title> 
+    <!--Roboto fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--style.css link-->
+    <link href="style.css"rel="stylesheet"/>
+    <style>
+        h1{
+            color:skyblue;
+            text-align: center;
+        } 
+        
+    </style>
 </head>
 
 <body>
-<header>
-    <h1>WELLCOME TO MY HTML WEB PAGE</h1>
+    <!--class attributes-->
+<header class="header-part">
+    <nav>
+        <a class="home-link" href="#">Home</a>
+        <a class="about-link" href="#">About</a>
+        <a class="work-link" href="#">Work</a>
+        <a class="resume-link" href="#">Resume</a>
+        <a class="contact-link" href="#">Contact</a>
+    </nav>
+    <h1>WELLCOME TO MY HTML AND CSS WEB PAGE</h1>
     <img src="img/html5-logo-file-html-shiny-icon-svg-wikimedia-commons-11.png" alt="html logo">
-    <figure>
-<figcaptio>An example of HTML Code</figcaptio>
+    <figure clas="figure-part">
+<figcaption>An example of HTML Code</figcaption>
 <p>
-    <code>&lt;h1&gt;WELLCOME TO MY HTML WEB PAGE &lt;/h1&gt;</code>
+    <code>&lt;h1&gt;WELLCOME TO MY WEB PAGE &lt;/h1&gt;</code>
 </p>
     </figure>
-       
-        <div>   
-        <nav>
-            <a href="home">Home</a>
-            <br>
-            <a href="about">About</a>
-            <br>
-            <a href="work">Work</a>
-            <br>
-            <a href="resume">Resume</a>
-            <br>
-            <a href="contact">Contact</a>
-            <br>
-        </nav>
-    </div>
 </header>
     
- <main> 
+ <main class="main-part"> 
 <section id="About">
         <dev class="container">
             <h2>About</h2>
-            <p>Hi,my name is Adeyanju Aminah and this is my html portfolio web page.I'm a Nigerian web developer that work with team to create websites and applications.</p>
+            <p>Hi,my name is Adeyanju Aminah and this is my first portfolio web page.I'm a Nigerian web developer that work with team to create websites and applications.</p>
+           <br>
             <p>Here is about us and what we can do for you</p>
-<img src="img/website-development-tree.png" alt="image" height="1000" width="984"> 
-<img src="img/website-development-phases.webp" alt="image" height="800" width="400"><img src="img/career section.jfif" alt="image" height="1000" width="1000">
-<img src="img/software dev gurus.jfif" alt="image" heigh="1000" width="1000">
+<img src="img/portfolio frame.png" alt="image" height="1000" width="984"> 
+<img src="img/what does a web dev do.jpg"image" heigh="1000" width="1000">
 <p>For more information about us visit 
     
     <a href="https://gomycode.com">www.gomycode.com</a>
@@ -71,23 +77,23 @@
         <p>EDUCATION</p>
         <dav>
             <nav>
-                <ul>
+                <ol>
                     <li>Scince High school 2018</li>
                     <li>Udemy coures 2023</li>
-                </ul>
+                </ol>
             </nav>
         </dav>
         <p>RELATED SKILLS</p>
         <dav>
             <nav>
-                <ul>
+               <ol>
                     <li>Html</li>
                     <li>Css</li>
                     <li>Javascript</li>
-                   <li>Git</li>
+                   <li>grahic design</li>
                    <li>Adaptability</li>
                    <li>Problem solving</li>
-                </ul>
+                </ol>
             </nav>
         </dav>
         <img src="img/html_css_javascript.png" alt="image" height="800" width="600">
@@ -96,7 +102,7 @@
         <dev class="container">
             <h2>Contact</h2>
             <p>Reach out to us anytime to maintain,create your websites and applicatios,or live a message</p>
-            <table border="2">
+            <table id="table section" class="table-part" border="2">
                 <thead>
                     <tr>
                         <th>E-mail</th>
@@ -113,32 +119,31 @@
 </main>  
     <!--Amaizing portfolio website-->
     <br>
-    <footer>
         <h2>Sign Up</h2>
          <form action="https://authenticmennah.com/"></www.authenticmennah.>
          <label for=""> First Name:</label>
          <input type="text">
-         <br>
+         <br><br>
          <label for="Adeyanju">Surname:</label> 
          <input type="text">
-         <br>
+         <br><br>
          <label for="01141135207">Number:</label>
          <input type="number">
-         <br>
+         <br><br>
          <label for="">Country:</label>
          <select>
             <option value="">Nigeria</option>
             <option value="">Egypt</option>
             <option value="">Senegal</option>
         </select>
-        <br>
+        <br><br>
         <button>Please Submit</button>
     </form>
-    <P>
-        ADEYANJU AMINAH
-    </P>
-</footer>
-
+   <footer class="footer-part">
+    <p>
+        AMINAH ADEYANJU
+    </p>
+   </footer>
 </body>
 
 </html>
